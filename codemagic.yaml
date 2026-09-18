@@ -1,0 +1,21 @@
+workflows:
+  ios-release:
+    name: Compilar iOS Release
+    max_build_duration: 60
+    instance_type: mac_mini_m2
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Instalar dependencias
+        script: flutter packages pub get
+      - name: Instalar pods de iOS
+        script: |
+          cd ios
+          pod install
+      - name: Compilar App para iOS (IPA)
+        script: |
+          flutter build ipa --release --no-codesign
+    artifacts:
+      - build/ios/ipa/*.ipa

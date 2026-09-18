@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947232725725",
+    "project_id": "control-gastos-pareja-3ff73",
+    "storage_bucket": "control-gastos-pareja-3ff73.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947232725725:android:c94cae9399dd64e2071934",
+        "android_client_info": {
+          "package_name": "com.example.control_gastos_pareja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5QhKgXk2o9sHTfoZf7TNmLiu5DtO1BKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
